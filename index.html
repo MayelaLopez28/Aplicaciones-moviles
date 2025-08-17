@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Spot</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: white;
+            width: 100%;
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 24px; font-weight: bold; }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li a { text-decoration: none; color: black; }
+        .menu li a:hover { text-decoration: underline; }
+        h1{
+            text-align: left;
+            font-size: 40px;
+            margin: 40px 0 20px;
+            font-style: italic;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap:20px;
+        }
+        .rect-grande{
+            background: url('https://m.media-amazon.com/images/M/MV5BNmQyNzJhNmQtMGY2Zi00MGRhLTk0YTYtMWNjOWZlZmVjODNkXkEyXkFqcGc@._V1_FMjpg_UX683_.jpg') no-repeat center center;
+            background-size: cover;
+            height: 1200px;
+            border-radius: 15px;
+        }
+        .rect-derecha{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+        }
+        .rect-small{
+            height: 600px;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            background-color: lightgray;
+        }
+
+        #small1 {
+            background-image: url('https://i.scdn.co/image/ab6761610000e5ebe672b5f553298dcdccb0e676');
+        }
+
+        #small2 {
+            background-image: url('https://media.vogue.es/photos/6623b6ec46d0c20006359610/2:3/w_2560%2Cc_limit/GettyImages-2149329155.jpg');
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">BlogSpot</div>
+        <ul class="menu">
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Radio</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Be a writer</a></li>
+            <li><a href="#">Talk to us</a></li>
+        </ul>
+    </div>
+
+    <h1>Best of the week</h1>
+
+    <div class="grid">
+        <div class="rect-grande"></div>
+        <div class="rect-derecha">
+            <div id="small1" class="rect-small"></div>
+            <div id="small2" class="rect-small"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
